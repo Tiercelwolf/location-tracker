@@ -1,0 +1,28 @@
+/* Custom styles for Location History Tab */
+
+/* Location item styling */
+.location-item {
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Location image or map thumbnail */
+  .location-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+  }
+  
+  /* Empty state message */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+  }

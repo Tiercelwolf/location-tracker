@@ -1,0 +1,42 @@
+/* Custom styles for Profile Tab */
+
+/* Profile header section */
+.profile-header {
+    padding: 2rem 1rem;
+    background-image: linear-gradient(to bottom, var(--ion-color-primary), var(--ion-color-primary-shade));
+    color: white;
+    text-align: center;
+  }
+  
+  /* Large avatar for profile */
+  .profile-avatar {
+    width: 96px !important;
+    height: 96px !important;
+    margin: 0 auto 1rem;
+    border: 3px solid white;
+  }
+  
+  /* Settings items styling */
+  ion-item.settings-item {
+    --padding-start: 16px;
+    --inner-padding-end: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Settings item icon */
+  ion-item.settings-item ion-icon {
+    margin-right: 16px;
+    color: var(--ion-color-medium);
+  }
+  
+  /* Section headers */
+  ion-list-header {
+    padding-top: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Log out button */
+  .logout-item {
+    margin-top: 32px !important;
+  }

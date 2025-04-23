@@ -1,0 +1,67 @@
+/* Custom styles for Home Tab */
+
+/* Welcome section */
+.welcome-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .welcome-section h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ion-color-dark);
+  }
+  
+  .welcome-section p {
+    color: var(--ion-color-medium);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Features list */
+  .features-list {
+    background-color: rgba(var(--ion-color-primary-rgb), 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .features-list h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--ion-color-dark);
+  }
+  
+  .features-list ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+  }
+  
+  .features-list li {
+    margin-bottom: 0.5rem;
+    color: var(--ion-color-dark);
+  }
+  
+  /* Dark mode adjustments */
+  @media (prefers-color-scheme: dark) {
+    .welcome-section h1 {
+      color: var(--ion-color-light);
+    }
+    
+    .features-list {
+      background-color: rgba(var(--ion-color-primary-rgb), 0.15);
+    }
+    
+    .features-list h2,
+    .features-list li {
+      color: var(--ion-color-light);
+    }
+  }

@@ -1,0 +1,7 @@
+{
+    "name": "location-tracker",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }
