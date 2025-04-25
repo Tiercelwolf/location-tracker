@@ -26,3 +26,233 @@
     padding: 2rem;
     text-align: center;
   }
+
+  .bmap-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .edge-swipe-area {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    z-index: 20;
+    background: transparent;
+  }
+
+  .edge-swipe-area.left {
+    left: 0;
+  }
+
+  .edge-swipe-area.right {
+    right: 0;
+  }
+  
+  .playback-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 20;
+  }
+  
+  .time-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  ion-range {
+    --bar-height: 3px;
+    --knob-size: 20px;
+  }
+  
+  .speed-control ion-range {
+    --bar-height: 2px;
+    --knob-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+/* Updated time form modal styles */
+.time-form-modal {
+--border-radius: 10px;
+--width: auto;
+--max-width: 800px;
+--height: auto;
+--max-height: 90%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+background: none;
+box-shadow: none;
+--backdrop-opacity: 0.5;
+}
+
+/* Responsive form container */
+.responsive-form-container {
+display: flex;
+flex-direction: column;
+width: auto;
+max-height: 90vh;
+overflow: hidden;
+
+/* On larger screens, use row layout */
+@media (min-width: 768px) {
+flex-direction: row;
+}
+}
+
+.time-range-form {
+padding: 20px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+width: 300px; /* Fixed width instead of percentage */
+max-width: 300px; /* Fixed max-width */
+}
+
+.time-range-title {
+text-align: center;
+font-size: 20px;
+font-weight: 500;
+color: #333;
+margin-bottom: 16px;
+}
+
+.time-input-group {
+margin-bottom: 16px;
+}
+
+.time-input-label {
+display: block;
+margin-bottom: 8px;
+font-size: 14px;
+color: #333;
+}
+
+.time-input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 6px;
+font-size: 14px;
+background: white;
+color: #333;
+text-align: left;
+}
+
+.time-form-buttons {
+display: flex;
+justify-content: space-between;
+margin-top: 16px;
+}
+
+.cancel-button, .confirm-button {
+padding: 10px 16px;
+border-radius: 6px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+flex: 1;
+min-height: 44px; /* Ensure touchable size */
+}
+
+.cancel-button {
+background-color: #bbbbbb;
+color: white;
+margin-right: 8px;
+}
+
+.confirm-button {
+background-color: #4caf50;
+color: white;
+margin-left: 8px;
+}
+  
+  .dot-modal {
+    position: absolute;
+    bottom: 140px;
+    right: 20px;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .dot-modal:active {
+    transform: scale(0.95);
+  }
+  
+  .start-marker-label {
+    position: absolute;
+    background: #3880ff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .end-marker-label {
+    position: absolute;
+    background: #ff3880;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+ /* Calendar container styles */
+.calendar-container {
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+margin-top: 16px;
+min-width: 300px;
+
+/* On larger screens, position beside form */
+@media (min-width: 768px) {
+margin-top: 0;
+margin-left: 16px;
+}
+}
+
+ion-datetime {
+--background: white;
+--border-radius: 10px;
+border-radius: 10px;
+width: 100%;
+background: white;
+box-shadow: none;
+--calendar-background: white;
+--title-color: #333;
+
+/* Make calendar sizes more flexible */
+--calendar-width: 100%;
+max-width: 100%;
+}

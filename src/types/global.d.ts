@@ -63,6 +63,7 @@ declare namespace BMapGL {
     // BMAP_SATELLITE_MAP: any;
     // BMAP_HYBRID_MAP: any;
     initBaiduMap?: () => void;
+    BMapGL?: any; // Added to support BMapGL access through window
   }
   
   // React-BMAPGl component types (simplified)
@@ -103,6 +104,18 @@ declare namespace BMapGL {
       children?: React.ReactNode;
       [key: string]: any;
     }
+    
+    // Added Polyline declaration
+    export interface PolylineProps {
+      path: BMapGL.Point[];
+      strokeColor?: string;
+      strokeWeight?: number;
+      strokeOpacity?: number;
+      enableMassClear?: boolean;
+      enableEditing?: boolean;
+      onClick?: (e: any) => void;
+      [key: string]: any;
+    }
   
     export class Map extends React.Component<MapProps> {}
     export class Marker extends React.Component<MarkerProps> {}
@@ -110,4 +123,5 @@ declare namespace BMapGL {
     export class ScaleControl extends React.Component<any> {}
     export class ZoomControl extends React.Component<any> {}
     export class NavigationControl extends React.Component<any> {}
+    export class Polyline extends React.Component<PolylineProps> {} // Added Polyline component
   }
